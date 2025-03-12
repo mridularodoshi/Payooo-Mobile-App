@@ -11,30 +11,34 @@
 
 <body class="bg-slate-800">
    <section class="max-w-screen-sm mx-auto bg-gray-200 min-h-screen">
+    <!-- logo -->
     <div class="flex justify-center items-center">
         <div class="flex justify-center items-center py-7 relative">
             <img src="assets/bg.png" alt="" class="w-48" >
             <img src="assets/Group.png" alt="" class="absolute">
         </div>
-
     </div>
+    <!-- login form -->
     <div class="flex justify-center items-center bg-gray-200">
           <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-            <div class="card-body">
+            <form class="card-body">
               <fieldset class="fieldset">
-                <label class="fieldset-label">Mobile Number</label>
-                <input type="number" class="input" placeholder="Enter your number" />
+                <label class="fieldset-label">Acount Number</label>
+                <input id="account-number" type="number" class="input" placeholder="Enter your number" required/>
                 <label class="fieldset-label">PIN</label>
-                <input type="number" class="input" placeholder="Enter 4 digit Pin" />
+                <input id="pin" type="number" class="input" placeholder="Enter 4 digit Pin" required />
                 <div><a class="link link-hover"></a></div>
-                <button class="btn btn-neutral bg-sky-600 mt-4">Login</button>
+                <button id="btn-login" class="btn btn-neutral bg-sky-600 mt-4">Login</button>
               </fieldset>
-            </div>
+            </form>
           </div>
         </div>
       </div>
 
    </section>
     
+
+
+   <script src="js/login.js"></script>
 </body>
 </html>
